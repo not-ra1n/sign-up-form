@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+    font-family: "japan";
+    src: 
+        url("fonts/kobajeon-w18yp-webfont.woff") format("woff"),
+        url("fonts/kobajeon-w18yp-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a {
+    color: white;
+}
+
+.shadow {
+    /* color: white;
+    font:
+        4.5rem "japan",
+        sans-serif;
+        position: absolute;
+        top: 18%; 
+      left: 0%;  */
+      position: absolute;
+      top: 18%; 
+    left: 0%;
+      background-color: rgba(0,0,0,.4);
+      padding: 10px 70px 10px 60px;
+      display: flex;
+      align-items: center;
+    /* justify-content: center; */
+}
+
+.balance {
+    color: white;
+    font:
+        4.5rem "japan",
+        sans-serif;
+}
+
+
+.image-container img {
+    width: 382px;
+    height: 850px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.source {
+    position: absolute;
+    top: 93%; 
+  left: 31%; 
+  color: white; 
+  font-size: 18px; 
+}
+
+.header {
+    margin: 50px 40px 0px 60px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header2 {
+    font-size: 1.6rem;
+    margin: 10px 40px 0px 60px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header3 {
+    font-size: 1.6rem;
+    margin: 20px 40px 0px 60px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container2 {
+    background-color: #FAF9F6;
+    position: relative;
+    max-width: 1000px;
+}
+
+.container3 {
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 320px;
+    width: 92%;
+    background-color: white;
+    position: absolute;
+    box-shadow: 4px 7px 5px lightgrey;
+    /* display: flex; */
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+  input, label {
+    display: block;
+    /* display:flex; */
+}
+
+
+input:focus {
+    box-shadow: 0px 7px 5px lightgrey;
+    border: 1.5px solid #FF9636;
+    border-radius: 8px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+   }
+
+.first_name {
+    float:left; 
+    margin-right:70px;
+    margin-left: 60px;
+}
+
+.last_name {
+    float:left;
+    background-color: white;
+}
+
+.lets-do {
+    margin-left: 60px;
+    margin-top: 40px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+    color: #36454F;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 7px;
+    border: 1px solid #E5E7EB;
+    padding-left: 10px;
+}
+
+.email {
+    float:left; 
+    margin-right:70px;
+    margin-left: 60px;
+}
+
+.phone-number {
+    float:left;
+}
+
+.password {
+    float:left; 
+    margin-right:70px;
+    margin-left: 60px;
+}
+
+.password-confirm {
+    float:left;
+}
+
+html {
+    background-color: #FAF9F6;
+}
+
+.create {
+    margin-top: 160px;
+    margin-left: 60px;
+    padding: 20px 20px 40px 20px;
+    width: 225px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #FF9636;
+    border-radius: 7px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 2px 3px 7px lightgrey;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.mr {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.login {
+    color: #FF9636;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.already {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+[type^='pass'] {
+  border: none;
+  outline: 1.9px solid red;
+  border-radius: 5px;
+}
